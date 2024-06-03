@@ -7,7 +7,7 @@ Este servicio consta de dos metodos de conversión de HTML a PDF, utilizando la 
 
 1. Convertir Html a PDF, metodo que recibe un String con el HTML en formato texto.
 
-  Metodo: POST 
+  Metodo: POST </br>
   endpoint: /tools/convert
   Body: Html en formato texto
 
