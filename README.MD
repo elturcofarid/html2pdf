@@ -1,8 +1,8 @@
 <h1>HTML2PDF</h1>
 
 
-<h3> 
-<p>
+<h4> 
+
 Este servicio consta de dos metodos de conversión de HTML a PDF, utilizando la librería HTML2PDF, https://www.html2pdf.fr/es 
 </br>
 </br>
@@ -30,5 +30,5 @@ nota: este servicio también permite convertir un texto HTML a un archivo PDF, c
 } </br>
 </br>
 </br>
-</p>
-</h3>
+
+</h4>
