@@ -32,3 +32,17 @@ nota: este servicio también permite convertir un texto HTML a un archivo PDF, c
 </br>
 
 </h4>
+
+
+<h6>
+Configuración del servicio:
+
+en el archivo Aplication.properties agregar  la informacion de consumo de RabbitMQ
+
+queue.html2pdf=html2pdf </br>
+
+spring.rabbitmq.host=xxxxxxxxx  </br>
+spring.rabbitmq.username=xxxxx  </br>
+spring.rabbitmq.password=xxxx  </br>
+
+</h6>
