@@ -6,7 +6,7 @@
 Este servicio consta de dos metodos de conversión de HTML a PDF, utilizando la librería HTML2PDF, https://www.html2pdf.fr/es 
 </br>
 </br>
-1. Convertir Html a PDF, metodo que recibe un String con el HTML en formato texto.
+1. Convertir Html a PDF, metodo que recibe un String con el HTML en formato texto, la respuesta es dada en byte.
 
   Metodo: POST </br>
   endpoint: /tools/convert </br>
@@ -19,6 +19,18 @@ Este servicio consta de dos metodos de conversión de HTML a PDF, utilizando la 
   Metodo: POST  </br>
   endpoint: /tools/convertFile </br>
   form-data: Parametro file, archivo HTML </br>
+
+
+</br>
+3. Convertir Html a PDF, metodo que recibe un String con el HTML en formato texto, la respuesta es dada en String.
+
+Metodo: POST </br>
+endpoint: /tools/convertText </br>
+Body: Html en formato texto </br>
+
+</br>
+</br>
+
 
 </br>
 nota: este servicio también permite convertir un texto HTML a un archivo PDF, configurando el servicio para que escuche una cola en RabbitMQ con la siguiente estructura

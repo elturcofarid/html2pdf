@@ -6,7 +6,9 @@ import java.io.IOException;
 
 public interface Html2PdfService {
 
-     ResponseEntity<byte[]> convertHtmlToPdf(String htmlContent);
+     ResponseEntity<byte[]> convertHtmlToPdfByte(String htmlContent);
+
+     String convertHtmlToPdfText(String htmlContent);
 
      ResponseEntity<byte[]> convertHtmlToPdf(MultipartFile file) ;
 

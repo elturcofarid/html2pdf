@@ -33,7 +33,7 @@ public class Html2PdfReceiver {
 		try {
 			 data = gson.fromJson(in, DataRequest.class);
 			try {
-				messageSender.send(new DataRequest(html2PdfService.convertHtmlToPdf(data.getData().toString()), data.getQueue()));
+				messageSender.send(new DataRequest(html2PdfService.convertHtmlToPdfText(data.getData().toString()), data.getQueue()));
 			} catch (Exception e) {
 				LOGGER.error("Ha ocurrido un error al insertar mensaje en la cola ::: "+ data.getQueue() +" :::: "+ e.getMessage());
 			}
